@@ -1,8 +1,8 @@
-import unittest
+from src.utils import get_current_hour1, get_current_hour2, get_current_hour3
 from unittest.mock import patch, Mock
-import pytest
 import datetime
-from pytest_demo.utils import get_current_hour1, get_current_hour2, get_current_hour3
+import pytest
+import unittest
 
 test_datetime = datetime.datetime(year=2012, month=1, day=1, hour=1)
 

@@ -1,4 +1,4 @@
-from pytest_demo.main import main
+from src.main import main
 
 
 def test_main():
