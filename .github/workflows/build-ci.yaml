@@ -24,6 +24,6 @@ jobs:
     - name: Build the Docker image
       run: |
         echo ${RELEASE_VERSION}
-        docker build . --file ./docker/Dockerfile --tag raywu60kg/github-ci-demo:$(RELEASE_VERSION)
+        docker build . --file ./docker/Dockerfile --tag raywu60kg/github-ci-demo:${RELEASE_VERSION}
     - name: Docker Push
-      run: docker push raywu60kg/github-ci-demo:$(RELEASE_VERSION)
+      run: docker push raywu60kg/github-ci-demo:${RELEASE_VERSION}
