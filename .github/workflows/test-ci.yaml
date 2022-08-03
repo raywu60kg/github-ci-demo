@@ -24,8 +24,8 @@ jobs:
           poetry install
       - name: Lint with black
         run: |
-          black src/*
-          black tests/*
+          poetry run black src/*
+          poetry run black tests/*
       - name: Test with pytest
         run: |
-          pytest
+          poetry run pytest
